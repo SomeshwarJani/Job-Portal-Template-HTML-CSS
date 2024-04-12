@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="settings.css" />
+    <link rel="stylesheet" href="../shared.css" />
+    <script
+      src="https://kit.fontawesome.com/04f8e8d8c7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__panel">
+        <a href="../../index.html" class="main-header__brand">
+          <h1>ADMIN PANEL</h1>
+        </a>
+        <div class="company-details">
+          <div class="company-details__icon">
+            <img
+              src="../images/company_logo.jpg"
+              alt="user image"
+              height="45em"
+              width="45em"
+            />
+          </div>
+          <label class="company-details__secondary">Company</label>
+          <label class="company-details__primary">Fastzone</label>
+          <div class="company-details__expand">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m6 9l6 6l6-6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="M26 16.586V14h-2v3a1 1 0 0 0 .293.707L27 20.414V22H5v-1.586l2.707-2.707A1 1 0 0 0 8 17v-4a7.985 7.985 0 0 1 12-6.917V3.846a9.896 9.896 0 0 0-3-.796V1h-2v2.05A10.014 10.014 0 0 0 6 13v3.586l-2.707 2.707A1 1 0 0 0 3 20v3a1 1 0 0 0 1 1h7v1a5 5 0 0 0 10 0v-1h7a1 1 0 0 0 1-1v-3a1 1 0 0 0-.293-.707ZM19 25a3 3 0 0 1-6 0v-1h6Z"
+              />
+              <circle cx="26" cy="8" r="4" fill="currentColor" />
+            </svg>
+          </li>
+          <li class="main-nav__item main-nav__item--cta">
+            <a href="../../index.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 2048 2048"
+              >
+                <path
+                  fill="currentColor"
+                  d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896z"
+                />
+              </svg>
+              Post a job</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="main-sidebar">
+      <ul class="main-sidebar__items">
+        <label class="main-sidebar__heading">Menu</label>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 15 15"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M2.8 1h-.05c-.229 0-.426 0-.6.041A1.5 1.5 0 0 0 1.04 2.15c-.04.174-.04.37-.04.6v2.5c0 .229 0 .426.041.6A1.5 1.5 0 0 0 2.15 6.96c.174.04.37.04.6.04h2.5c.229 0 .426 0 .6-.041A1.5 1.5 0 0 0 6.96 5.85c.04-.174.04-.37.04-.6v-2.5c0-.229 0-.426-.041-.6A1.5 1.5 0 0 0 5.85 1.04C5.676 1 5.48 1 5.25 1H5.2zm-.417 1.014c.043-.01.11-.014.417-.014h2.4c.308 0 .374.003.417.014a.5.5 0 0 1 .37.37c.01.042.013.108.013.416v2.4c0 .308-.003.374-.014.417a.5.5 0 0 1-.37.37C5.575 5.996 5.509 6 5.2 6H2.8c-.308 0-.374-.003-.417-.014a.5.5 0 0 1-.37-.37C2.004 5.575 2 5.509 2 5.2V2.8c0-.308.003-.374.014-.417a.5.5 0 0 1 .37-.37M9.8 1h-.05c-.229 0-.426 0-.6.041A1.5 1.5 0 0 0 8.04 2.15c-.04.174-.04.37-.04.6v2.5c0 .229 0 .426.041.6A1.5 1.5 0 0 0 9.15 6.96c.174.04.37.04.6.04h2.5c.229 0 .426 0 .6-.041a1.5 1.5 0 0 0 1.11-1.109c.04-.174.04-.37.04-.6v-2.5c0-.229 0-.426-.041-.6a1.5 1.5 0 0 0-1.109-1.11c-.174-.04-.37-.04-.6-.04h-.05zm-.417 1.014c.043-.01.11-.014.417-.014h2.4c.308 0 .374.003.417.014a.5.5 0 0 1 .37.37c.01.042.013.108.013.416v2.4c0 .308-.004.374-.014.417a.5.5 0 0 1-.37.37c-.042.01-.108.013-.416.013H9.8c-.308 0-.374-.003-.417-.014a.5.5 0 0 1-.37-.37C9.004 5.575 9 5.509 9 5.2V2.8c0-.308.003-.374.014-.417a.5.5 0 0 1 .37-.37M2.75 8h2.5c.229 0 .426 0 .6.041A1.5 1.5 0 0 1 6.96 9.15c.04.174.04.37.04.6v2.5c0 .229 0 .426-.041.6a1.5 1.5 0 0 1-1.109 1.11c-.174.04-.37.04-.6.04h-2.5c-.229 0-.426 0-.6-.041a1.5 1.5 0 0 1-1.11-1.109c-.04-.174-.04-.37-.04-.6v-2.5c0-.229 0-.426.041-.6A1.5 1.5 0 0 1 2.15 8.04c.174-.04.37-.04.6-.04m.05 1c-.308 0-.374.003-.417.014a.5.5 0 0 0-.37.37C2.004 9.425 2 9.491 2 9.8v2.4c0 .308.003.374.014.417a.5.5 0 0 0 .37.37c.042.01.108.013.416.013h2.4c.308 0 .374-.004.417-.014a.5.5 0 0 0 .37-.37c.01-.042.013-.108.013-.416V9.8c0-.308-.003-.374-.014-.417a.5.5 0 0 0-.37-.37C5.575 9.004 5.509 9 5.2 9zm7-1h-.05c-.229 0-.426 0-.6.041A1.5 1.5 0 0 0 8.04 9.15c-.04.174-.04.37-.04.6v2.5c0 .229 0 .426.041.6a1.5 1.5 0 0 0 1.109 1.11c.174.041.371.041.6.041h2.5c.229 0 .426 0 .6-.041a1.5 1.5 0 0 0 1.109-1.109c.041-.174.041-.371.041-.6V9.75c0-.229 0-.426-.041-.6a1.5 1.5 0 0 0-1.109-1.11c-.174-.04-.37-.04-.6-.04h-.05zm-.417 1.014c.043-.01.11-.014.417-.014h2.4c.308 0 .374.003.417.014a.5.5 0 0 1 .37.37c.01.042.013.108.013.416v2.4c0 .308-.004.374-.014.417a.5.5 0 0 1-.37.37c-.042.01-.108.013-.416.013H9.8c-.308 0-.374-.004-.417-.014a.5.5 0 0 1-.37-.37C9.004 12.575 9 12.509 9 12.2V9.8c0-.308.003-.374.014-.417a.5.5 0 0 1 .37-.37"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 48 48"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              >
+                <path
+                  d="M35 14c0-5.523-4.925-10-11-10S13 8.477 13 14m-6 2a2 2 0 0 1 2-2h30a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2v0a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v0a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm3 14v14h28V30"
+                />
+                <path d="M20 26h8v6h-8z" />
+              </g>
+            </svg>
+            Job Listing
+          </a>
+        </li>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="m25.7 9.3l-7-7c-.2-.2-.4-.3-.7-.3H8c-1.1 0-2 .9-2 2v24c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V10c0-.3-.1-.5-.3-.7M18 4.4l5.6 5.6H18zM24 28H8V4h8v6c0 1.1.9 2 2 2h6z"
+              />
+              <path fill="currentColor" d="M10 22h12v2H10zm0-6h12v2H10z" />
+            </svg>
+            Shortlisted Resume
+          </a>
+        </li>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z"
+              />
+            </svg>
+            Company Profile
+          </a>
+        </li>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M15 4H6v16h12V7h-3zM6 2h10l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m2 9h8v2H8zm0 4h8v2H8z"
+              />
+            </svg>
+            Document
+          </a>
+        </li>
+        <label class="main-sidebar__heading">Account</label>
+        <li class="main-sidebar__items">
+          <a href="settings.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M19.43 12.98c.04-.32.07-.64.07-.98c0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.566.566 0 0 0-.18-.03c-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98c0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46a.5.5 0 0 0 .61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03c.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64zm-1.98-1.71c.04.31.05.52.05.73c0 .21-.02.43-.05.73l-.14 1.13l.89.7l1.08.84l-.7 1.21l-1.27-.51l-1.04-.42l-.9.68c-.43.32-.84.56-1.25.73l-1.06.43l-.16 1.13l-.2 1.35h-1.4l-.19-1.35l-.16-1.13l-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7l-1.06.43l-1.27.51l-.7-1.21l1.08-.84l.89-.7l-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13l-.89-.7l-1.08-.84l.7-1.21l1.27.51l1.04.42l.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43l.16-1.13l.2-1.35h1.39l.19 1.35l.16 1.13l1.06.43c.43.18.83.41 1.23.71l.91.7l1.06-.43l1.27-.51l.7 1.21l-1.07.85l-.89.7zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4m0 6c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2"
+              />
+            </svg>
+            Settings
+          </a>
+        </li>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M4 12a1 1 0 0 0 1 1h7.59l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-4-4a1 1 0 1 0-1.42 1.42l2.3 2.29H5a1 1 0 0 0-1 1M17 2H7a3 3 0 0 0-3 3v3a1 1 0 0 0 2 0V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a1 1 0 0 0-2 0v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3"
+              />
+            </svg>
+            Sign Out
+          </a>
+        </li>
+        <li class="main-sidebar__items">
+          <a href="../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 36 36"
+            >
+              <path
+                fill="currentColor"
+                d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14"
+                class="clr-i-outline clr-i-outline-path-1"
+              />
+              <path
+                fill="currentColor"
+                d="M18.29 8.92a7.38 7.38 0 0 0-5.72 2.57a1 1 0 0 0-.32.71a.92.92 0 0 0 .95.92a1.08 1.08 0 0 0 .71-.29a5.7 5.7 0 0 1 4.33-2c2.36 0 3.83 1.52 3.83 3.41v.05c0 2.21-1.76 3.44-4.54 3.65a.8.8 0 0 0-.76.92s0 2.32 0 2.75a1 1 0 0 0 1 .9h.11a1 1 0 0 0 .9-1v-2.06c3-.42 5.43-2 5.43-5.28v-.05c-.03-3-2.37-5.2-5.92-5.2"
+                class="clr-i-outline clr-i-outline-path-2"
+              />
+              <circle
+                cx="17.78"
+                cy="26.2"
+                r="1.25"
+                fill="currentColor"
+                class="clr-i-outline clr-i-outline-path-3"
+              />
+              <path fill="none" d="M0 0h36v36H0z" />
+            </svg>
+            Help Center
+          </a>
+        </li>
+      </ul>
+      <div class="user-details">
+        <div class="user-details__avatar">
+          <img
+            src="../images/Personal.jpeg"
+            alt="user image"
+            height="45em"
+            width="45em"
+          />
+        </div>
+        <label class="user-details__primary">Someshwar Jani</label>
+        <label class="user-details__secondary"
+          >someshwarjs.jani@gmail.com</label
+        >
+        <div class="user-details__expand">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <label class="page-label_primary">Settings</label>
+      <label class="page-label_secondary"
+        >All about Personal information, Password etc.</label
+      >
+      <div class="main-container">
+        <div class="main-container__left">
+          <div class="menu-items">
+            <div class="menu-item menu-item__active">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.2em"
+                height="1.2em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1"
+                />
+              </svg>
+              Personal Information
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.2em"
+                height="1.2em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5"
+                />
+              </svg>
+            </div>
+            <div class="menu-item menu-item__inactive">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.2em"
+                height="1.2em"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </g>
+              </svg>
+              Change Password
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.2em"
+                height="1.2em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="main-container__right">
+          <div class="profile-view">
+            <div class="profile-view__images">
+              <div class="profile-view__editimage">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M28.565 3.434a4.889 4.889 0 0 0-6.915 0L4.357 20.73a3.7 3.7 0 0 0-1.002 1.84l-1.333 6.22a1 1 0 0 0 1.188 1.188l6.22-1.333a3.7 3.7 0 0 0 1.84-1.002l17.295-17.295a4.89 4.89 0 0 0 0-6.914m-5.5 1.414a2.89 2.89 0 0 1 4.085 4.086l-.9.9l-4.086-4.085zm-2.316 2.315l4.086 4.086L9.857 26.23a1.7 1.7 0 0 1-.846.46L4.3 27.7l1.01-4.71a1.7 1.7 0 0 1 .46-.846z"
+                  />
+                </svg>
+                Change Image
+              </div>
+              <div class="profile-view__picture">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M2 19V9a2 2 0 0 1 2-2h.5a2 2 0 0 0 1.6-.8l2.22-2.96A.6.6 0 0 1 8.8 3h6.4a.6.6 0 0 1 .48.24L17.9 6.2a2 2 0 0 0 1.6.8h.5a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2"
+                    />
+                    <path d="M12 17a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <h3 class="info-title">Personal Information</h3>
+            <form class="profile-view__form">
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="firstname" class="profile-view__label"
+                    >First Name<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="firstname">
+                    <i class="fa-regular fa-user icon"></i>
+                    <input class="input-field" type="text" required />
+                  </div>
+                </div>
+                <div class="profile-view__detailitem">
+                  <label for="firstname" class="profile-view__label"
+                    >Last Name<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="firstname">
+                    <i class="fa-regular fa-user icon"></i>
+                    <input class="input-field" type="text" required />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="email" class="profile-view__label"
+                    >Email<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="email">
+                    <i class="fa-regular fa-envelope icon"></i>
+                    <input class="input-field" type="email" required />
+                  </div>
+                </div>
+                <div class="profile-view__detailitem">
+                  <label for="mobile-number" class="profile-view__label"
+                    >Mobile Number<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="mobile-number">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <input
+                      class="input-field"
+                      type="tel"
+                      pattern="[0-9]{10}"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="address" class="profile-view__label"
+                    >Address<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="address">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <input class="input-field" type="text" required />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="city" class="profile-view__label"
+                    >City<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="city">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <select id="city" name="city" class="form-select" required>
+                      <option value="">Select City</option>
+                      <option value="Abrama">Abrama</option>
+                      <option value="Adalaj">Adalaj</option>
+                      <option value="Ahmedabad">Ahmedabad</option>
+                      <option value="Ahwa">Ahwa</option>
+                      <option value="Amod">Amod</option>
+                      <option value="Amreli">Amreli</option>
+                      <option value="Amroli">Amroli</option>
+                      <option value="Anand">Anand</option>
+                      <option value="Anjar">Anjar</option>
+                      <option value="Ankleshwar">Ankleshwar</option>
+                      <option value="Babra">Babra</option>
+                      <option value="Bagasara">Bagasara</option>
+                      <option value="Bagasra">Bagasra</option>
+                      <option value="Banas Kantha">Banas Kantha</option>
+                      <option value="Bantva">Bantva</option>
+                      <option value="Bardoli">Bardoli</option>
+                      <option value="Bedi">Bedi</option>
+                      <option value="Bhachau">Bhachau</option>
+                      <option value="Bhanvad">Bhanvad</option>
+                      <option value="Bharuch">Bharuch</option>
+                      <option value="Bhavnagar">Bhavnagar</option>
+                      <option value="Bhayavadar">Bhayavadar</option>
+                      <option value="Bhuj">Bhuj</option>
+                      <option value="Bilimora">Bilimora</option>
+                      <option value="Bilkha">Bilkha</option>
+                      <option value="Borsad">Borsad</option>
+                      <option value="Botad">Botad</option>
+                      <option value="Chaklasi">Chaklasi</option>
+                      <option value="Chalala">Chalala</option>
+                      <option value="Chanasma">Chanasma</option>
+                      <option value="Chhala">Chhala</option>
+                      <option value="Chhota Udepur">Chhota Udepur</option>
+                      <option value="Chikhli">Chikhli</option>
+                      <option value="Chotila">Chotila</option>
+                      <option value="Dabhoi">Dabhoi</option>
+                      <option value="Dahegam">Dahegam</option>
+                      <option value="Dahod">Dahod</option>
+                      <option value="Dakor">Dakor</option>
+                      <option value="Damnagar">Damnagar</option>
+                      <option value="Dangs (India)">Dangs (India)</option>
+                      <option value="Dayapar">Dayapar</option>
+                      <option value="Delvada">Delvada</option>
+                      <option value="Delwada">Delwada</option>
+                      <option value="Devbhumi Dwarka">Devbhumi Dwarka</option>
+                      <option value="Devgadh Bariya">Devgadh Bariya</option>
+                      <option value="Dhandhuka">Dhandhuka</option>
+                      <option value="Dhanera">Dhanera</option>
+                      <option value="Dharampur">Dharampur</option>
+                      <option value="Dhari">Dhari</option>
+                      <option value="Dhola">Dhola</option>
+                      <option value="Dholka">Dholka</option>
+                      <option value="Dhoraji">Dhoraji</option>
+                      <option value="Dhrangadhra">Dhrangadhra</option>
+                      <option value="Dhrol">Dhrol</option>
+                      <option value="Dhuwaran">Dhuwaran</option>
+                      <option value="Disa">Disa</option>
+                      <option value="Dohad">Dohad</option>
+                      <option value="Dungarpur">Dungarpur</option>
+                      <option value="Dwarka">Dwarka</option>
+                      <option value="Gadhada">Gadhada</option>
+                      <option value="Gandevi">Gandevi</option>
+                      <option value="Gandhidham">Gandhidham</option>
+                      <option value="Gandhinagar">Gandhinagar</option>
+                      <option value="Gariadhar">Gariadhar</option>
+                      <option value="Ghogha">Ghogha</option>
+                      <option value="Gir Somnath">Gir Somnath</option>
+                      <option value="Godhra">Godhra</option>
+                      <option value="Gondal">Gondal</option>
+                      <option value="Halol">Halol</option>
+                      <option value="Halvad">Halvad</option>
+                      <option value="Hansot">Hansot</option>
+                      <option value="Harij">Harij</option>
+                      <option value="Himatnagar">Himatnagar</option>
+                      <option value="Jalalpore">Jalalpore</option>
+                      <option value="Jalalpur">Jalalpur</option>
+                      <option value="Jambusar">Jambusar</option>
+                      <option value="Jamnagar">Jamnagar</option>
+                      <option value="Jasdan">Jasdan</option>
+                      <option value="Jetalsar">Jetalsar</option>
+                      <option value="Jetpur">Jetpur</option>
+                      <option value="Jhulasan">Jhulasan</option>
+                      <option value="Jodhpur">Jodhpur</option>
+                      <option value="Jodia">Jodia</option>
+                      <option value="Jodiya Bandar">Jodiya Bandar</option>
+                      <option value="Junagadh">Junagadh</option>
+                      <option value="Kachchh">Kachchh</option>
+                      <option value="Kadi">Kadi</option>
+                      <option value="Kadod">Kadod</option>
+                      <option value="Kalavad">Kalavad</option>
+                      <option value="Kalol">Kalol</option>
+                      <option value="Kandla">Kandla</option>
+                      <option value="Kanodar">Kanodar</option>
+                      <option value="Kapadvanj">Kapadvanj</option>
+                      <option value="Karamsad">Karamsad</option>
+                      <option value="Kathor">Kathor</option>
+                      <option value="Katpur">Katpur</option>
+                      <option value="Kavant">Kavant</option>
+                      <option value="Kawant">Kawant</option>
+                      <option value="Keshod">Keshod</option>
+                      <option value="Khambhalia">Khambhalia</option>
+                      <option value="Khambhat">Khambhat</option>
+                      <option value="Kheda">Kheda</option>
+                      <option value="Khedbrahma">Khedbrahma</option>
+                      <option value="Kheralu">Kheralu</option>
+                      <option value="Kodinar">Kodinar</option>
+                      <option value="Kosamba">Kosamba</option>
+                      <option value="Kundla">Kundla</option>
+                      <option value="Kutch district">Kutch district</option>
+                      <option value="Kutiyana">Kutiyana</option>
+                      <option value="Lakhtar">Lakhtar</option>
+                      <option value="Lalpur">Lalpur</option>
+                      <option value="Lathi">Lathi</option>
+                      <option value="Limbdi">Limbdi</option>
+                      <option value="Lunavada">Lunavada</option>
+                      <option value="Mahemdavad">Mahemdavad</option>
+                      <option value="Mahesana">Mahesana</option>
+                      <option value="Mahudha">Mahudha</option>
+                      <option value="Malpur">Malpur</option>
+                      <option value="Manavadar">Manavadar</option>
+                      <option value="Mandal">Mandal</option>
+                      <option value="Mandvi">Mandvi</option>
+                      <option value="Mandvi (Surat)">Mandvi (Surat)</option>
+                      <option value="Mangrol">Mangrol</option>
+                      <option value="Mansa">Mansa</option>
+                      <option value="Meghraj">Meghraj</option>
+                      <option value="Mehsana">Mehsana</option>
+                      <option value="Mendarda">Mendarda</option>
+                      <option value="Modasa">Modasa</option>
+                      <option value="Morbi">Morbi</option>
+                      <option value="Morva (Hadaf)">Morva (Hadaf)</option>
+                      <option value="Morwa">Morwa</option>
+                      <option value="Mundra">Mundra</option>
+                      <option value="Nadiad">Nadiad</option>
+                      <option value="Naliya">Naliya</option>
+                      <option value="Narmada">Narmada</option>
+                      <option value="Naroda">Naroda</option>
+                      <option value="Navsari">Navsari</option>
+                      <option value="Okha">Okha</option>
+                      <option value="Olpad">Olpad</option>
+                      <option value="Paddhari">Paddhari</option>
+                      <option value="Padra">Padra</option>
+                      <option value="Palanpur">Palanpur</option>
+                      <option value="Palitana">Palitana</option>
+                      <option value="Paliyad">Paliyad</option>
+                      <option value="Panch Mahals">Panch Mahals</option>
+                      <option value="Panchmahal district">
+                        Panchmahal district
+                      </option>
+                      <option value="Pardi">Pardi</option>
+                      <option value="Parnera">Parnera</option>
+                      <option value="Patan">Patan</option>
+                      <option value="Pavi Jetpur">Pavi Jetpur</option>
+                      <option value="Petlad">Petlad</option>
+                      <option value="Porbandar">Porbandar</option>
+                      <option value="Radhanpur">Radhanpur</option>
+                      <option value="Rajkot">Rajkot</option>
+                      <option value="Rajpipla">Rajpipla</option>
+                      <option value="Rajula">Rajula</option>
+                      <option value="Ranavav">Ranavav</option>
+                      <option value="Rapar">Rapar</option>
+                      <option value="Roha">Roha</option>
+                      <option value="Sabar Kantha">Sabar Kantha</option>
+                      <option value="Sachin">Sachin</option>
+                      <option value="Salaya">Salaya</option>
+                      <option value="Sanand">Sanand</option>
+                      <option value="Sankheda">Sankheda</option>
+                      <option value="Sarkhej">Sarkhej</option>
+                      <option value="Savarkundla">Savarkundla</option>
+                      <option value="Sayla">Sayla</option>
+                      <option value="Shahpur">Shahpur</option>
+                      <option value="Shivrajpur">Shivrajpur</option>
+                      <option value="Siddhpur">Siddhpur</option>
+                      <option value="Sihor">Sihor</option>
+                      <option value="Sikka">Sikka</option>
+                      <option value="Sinor">Sinor</option>
+                      <option value="Sojitra">Sojitra</option>
+                      <option value="Songadh">Songadh</option>
+                      <option value="Surat">Surat</option>
+                      <option value="Surendranagar">Surendranagar</option>
+                      <option value="Talaja">Talaja</option>
+                      <option value="Tankara">Tankara</option>
+                      <option value="Tapi">Tapi</option>
+                      <option value="Than">Than</option>
+                      <option value="Thangadh">Thangadh</option>
+                      <option value="Tharad">Tharad</option>
+                      <option value="Thasra">Thasra</option>
+                      <option value="The Dangs">The Dangs</option>
+                      <option value="Umrala">Umrala</option>
+                      <option value="Umreth">Umreth</option>
+                      <option value="Un">Un</option>
+                      <option value="Una">Una</option>
+                      <option value="Unjha">Unjha</option>
+                      <option value="Upleta">Upleta</option>
+                      <option value="Utran">Utran</option>
+                      <option value="Vadnagar">Vadnagar</option>
+                      <option value="Vadodara">Vadodara</option>
+                      <option value="Vaghodia">Vaghodia</option>
+                      <option value="Vallabh Vidyanagar">
+                        Vallabh Vidyanagar
+                      </option>
+                      <option value="Vallabhipur">Vallabhipur</option>
+                      <option value="Valsad">Valsad</option>
+                      <option value="Vansda">Vansda</option>
+                      <option value="Vapi">Vapi</option>
+                      <option value="Vartej">Vartej</option>
+                      <option value="Vasa">Vasa</option>
+                      <option value="Vaso">Vaso</option>
+                      <option value="Vejalpur">Vejalpur</option>
+                      <option value="Veraval">Veraval</option>
+                      <option value="Vijapur">Vijapur</option>
+                      <option value="Vinchhiya">Vinchhiya</option>
+                      <option value="Vinchia">Vinchia</option>
+                      <option value="Virpur">Virpur</option>
+                      <option value="Visavadar">Visavadar</option>
+                      <option value="Visnagar">Visnagar</option>
+                      <option value="Vyara">Vyara</option>
+                      <option value="Wadhai">Wadhai</option>
+                      <option value="Wadhwan">Wadhwan</option>
+                      <option value="Waghai">Waghai</option>
+                      <option value="Wankaner">Wankaner</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="profile-view__detailitem">
+                  <label for="state" class="profile-view__label"
+                    >State<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="state">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <select
+                      id="state"
+                      name="state"
+                      class="form-select"
+                      required
+                    >
+                      <option value="">Select State</option>
+                      <option value="AP">Andhra Pradesh</option>
+                      <option value="AR">Arunachal Pradesh</option>
+                      <option value="AS">Assam</option>
+                      <option value="BR">Bihar</option>
+                      <option value="CT">Chhattisgarh</option>
+                      <option value="GA">Gujarat</option>
+                      <option value="HR">Haryana</option>
+                      <option value="HP">Himachal Pradesh</option>
+                      <option value="JK">Jammu and Kashmir</option>
+                      <option value="GA">Goa</option>
+                      <option value="JH">Jharkhand</option>
+                      <option value="KA">Karnataka</option>
+                      <option value="KL">Kerala</option>
+                      <option value="MP">Madhya Pradesh</option>
+                      <option value="MH">Maharashtra</option>
+                      <option value="MN">Manipur</option>
+                      <option value="ML">Meghalaya</option>
+                      <option value="MZ">Mizoram</option>
+                      <option value="NL">Nagaland</option>
+                      <option value="OR">Odisha</option>
+                      <option value="PB">Punjab</option>
+                      <option value="RJ">Rajasthan</option>
+                      <option value="SK">Sikkim</option>
+                      <option value="TN">Tamil Nadu</option>
+                      <option value="TG">Telangana</option>
+                      <option value="TR">Tripura</option>
+                      <option value="UT">Uttarakhand</option>
+                      <option value="UP">Uttar Pradesh</option>
+                      <option value="WB">West Bengal</option>
+                      <option value="AN">Andaman and Nicobar Islands</option>
+                      <option value="CH">Chandigarh</option>
+                      <option value="DN">Dadra and Nagar Haveli</option>
+                      <option value="DD">Daman and Diu</option>
+                      <option value="DL">Delhi</option>
+                      <option value="LD">Lakshadweep</option>
+                      <option value="PY">Puducherry</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="country" class="profile-view__label"
+                    >Country<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="country">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <select
+                      id="country"
+                      name="country"
+                      class="form-select"
+                      required
+                    >
+                      <option value="">Select Country</option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Åland Islands">Åland Islands</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antarctica">Antarctica</option>
+                      <option value="Antigua and Barbuda">
+                        Antigua and Barbuda
+                      </option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Armenia">Armenia</option>
+                      <option value="Aruba">Aruba</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Austria">Austria</option>
+                      <option value="Azerbaijan">Azerbaijan</option>
+                      <option value="Bahamas">Bahamas</option>
+                      <option value="Bahrain">Bahrain</option>
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option value="Barbados">Barbados</option>
+                      <option value="Belarus">Belarus</option>
+                      <option value="Belgium">Belgium</option>
+                      <option value="Belize">Belize</option>
+                      <option value="Benin">Benin</option>
+                      <option value="Bermuda">Bermuda</option>
+                      <option value="Bhutan">Bhutan</option>
+                      <option value="Bolivia">Bolivia</option>
+                      <option value="Bosnia and Herzegovina">
+                        Bosnia and Herzegovina
+                      </option>
+                      <option value="Botswana">Botswana</option>
+                      <option value="Bouvet Island">Bouvet Island</option>
+                      <option value="Brazil">Brazil</option>
+                      <option value="British Indian Ocean Territory">
+                        British Indian Ocean Territory
+                      </option>
+                      <option value="Brunei Darussalam">
+                        Brunei Darussalam
+                      </option>
+                      <option value="Bulgaria">Bulgaria</option>
+                      <option value="Burkina Faso">Burkina Faso</option>
+                      <option value="Burundi">Burundi</option>
+                      <option value="Cambodia">Cambodia</option>
+                      <option value="Cameroon">Cameroon</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Cape Verde">Cape Verde</option>
+                      <option value="Cayman Islands">Cayman Islands</option>
+                      <option value="Central African Republic">
+                        Central African Republic
+                      </option>
+                      <option value="Chad">Chad</option>
+                      <option value="Chile">Chile</option>
+                      <option value="China">China</option>
+                      <option value="Christmas Island">Christmas Island</option>
+                      <option value="Cocos (Keeling) Islands">
+                        Cocos (Keeling) Islands
+                      </option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Comoros">Comoros</option>
+                      <option value="Congo">Congo</option>
+                      <option value="Congo, The Democratic Republic of The">
+                        Congo, The Democratic Republic of The
+                      </option>
+                      <option value="Cook Islands">Cook Islands</option>
+                      <option value="Costa Rica">Costa Rica</option>
+                      <option value="Cote D'ivoire">Cote D'ivoire</option>
+                      <option value="Croatia">Croatia</option>
+                      <option value="Cuba">Cuba</option>
+                      <option value="Cyprus">Cyprus</option>
+                      <option value="Czech Republic">Czech Republic</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="Djibouti">Djibouti</option>
+                      <option value="Dominica">Dominica</option>
+                      <option value="Dominican Republic">
+                        Dominican Republic
+                      </option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="El Salvador">El Salvador</option>
+                      <option value="Equatorial Guinea">
+                        Equatorial Guinea
+                      </option>
+                      <option value="Eritrea">Eritrea</option>
+                      <option value="Estonia">Estonia</option>
+                      <option value="Ethiopia">Ethiopia</option>
+                      <option value="Falkland Islands (Malvinas)">
+                        Falkland Islands (Malvinas)
+                      </option>
+                      <option value="Faroe Islands">Faroe Islands</option>
+                      <option value="Fiji">Fiji</option>
+                      <option value="Finland">Finland</option>
+                      <option value="France">France</option>
+                      <option value="French Guiana">French Guiana</option>
+                      <option value="French Polynesia">French Polynesia</option>
+                      <option value="French Southern Territories">
+                        French Southern Territories
+                      </option>
+                      <option value="Gabon">Gabon</option>
+                      <option value="Gambia">Gambia</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Ghana">Ghana</option>
+                      <option value="Gibraltar">Gibraltar</option>
+                      <option value="Greece">Greece</option>
+                      <option value="Greenland">Greenland</option>
+                      <option value="Grenada">Grenada</option>
+                      <option value="Guadeloupe">Guadeloupe</option>
+                      <option value="Guam">Guam</option>
+                      <option value="Guatemala">Guatemala</option>
+                      <option value="Guernsey">Guernsey</option>
+                      <option value="Guinea">Guinea</option>
+                      <option value="Guinea-bissau">Guinea-bissau</option>
+                      <option value="Guyana">Guyana</option>
+                      <option value="Haiti">Haiti</option>
+                      <option value="Heard Island and Mcdonald Islands">
+                        Heard Island and Mcdonald Islands
+                      </option>
+                      <option value="Holy See (Vatican City State)">
+                        Holy See (Vatican City State)
+                      </option>
+                      <option value="Honduras">Honduras</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="Hungary">Hungary</option>
+                      <option value="Iceland">Iceland</option>
+                      <option value="India">India</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Iran, Islamic Republic of">
+                        Iran, Islamic Republic of
+                      </option>
+                      <option value="Iraq">Iraq</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="Isle of Man">Isle of Man</option>
+                      <option value="Israel">Israel</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Jamaica">Jamaica</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Jersey">Jersey</option>
+                      <option value="Jordan">Jordan</option>
+                      <option value="Kazakhstan">Kazakhstan</option>
+                      <option value="Kenya">Kenya</option>
+                      <option value="Kiribati">Kiribati</option>
+                      <option value="Korea, Democratic People's Republic of">
+                        Korea, Democratic People's Republic of
+                      </option>
+                      <option value="Korea, Republic of">
+                        Korea, Republic of
+                      </option>
+                      <option value="Kuwait">Kuwait</option>
+                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+                      <option value="Lao People's Democratic Republic">
+                        Lao People's Democratic Republic
+                      </option>
+                      <option value="Latvia">Latvia</option>
+                      <option value="Lebanon">Lebanon</option>
+                      <option value="Lesotho">Lesotho</option>
+                      <option value="Liberia">Liberia</option>
+                      <option value="Libyan Arab Jamahiriya">
+                        Libyan Arab Jamahiriya
+                      </option>
+                      <option value="Liechtenstein">Liechtenstein</option>
+                      <option value="Lithuania">Lithuania</option>
+                      <option value="Luxembourg">Luxembourg</option>
+                      <option value="Macao">Macao</option>
+                      <option
+                        value="Macedonia, The Former Yugoslav Republic of"
+                      >
+                        Macedonia, The Former Yugoslav Republic of
+                      </option>
+                      <option value="Madagascar">Madagascar</option>
+                      <option value="Malawi">Malawi</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Maldives">Maldives</option>
+                      <option value="Mali">Mali</option>
+                      <option value="Malta">Malta</option>
+                      <option value="Marshall Islands">Marshall Islands</option>
+                      <option value="Martinique">Martinique</option>
+                      <option value="Mauritania">Mauritania</option>
+                      <option value="Mauritius">Mauritius</option>
+                      <option value="Mayotte">Mayotte</option>
+                      <option value="Mexico">Mexico</option>
+                      <option value="Micronesia, Federated States of">
+                        Micronesia, Federated States of
+                      </option>
+                      <option value="Moldova, Republic of">
+                        Moldova, Republic of
+                      </option>
+                      <option value="Monaco">Monaco</option>
+                      <option value="Mongolia">Mongolia</option>
+                      <option value="Montenegro">Montenegro</option>
+                      <option value="Montserrat">Montserrat</option>
+                      <option value="Morocco">Morocco</option>
+                      <option value="Mozambique">Mozambique</option>
+                      <option value="Myanmar">Myanmar</option>
+                      <option value="Namibia">Namibia</option>
+                      <option value="Nauru">Nauru</option>
+                      <option value="Nepal">Nepal</option>
+                      <option value="Netherlands">Netherlands</option>
+                      <option value="Netherlands Antilles">
+                        Netherlands Antilles
+                      </option>
+                      <option value="New Caledonia">New Caledonia</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="Nicaragua">Nicaragua</option>
+                      <option value="Niger">Niger</option>
+                      <option value="Nigeria">Nigeria</option>
+                      <option value="Niue">Niue</option>
+                      <option value="Norfolk Island">Norfolk Island</option>
+                      <option value="Northern Mariana Islands">
+                        Northern Mariana Islands
+                      </option>
+                      <option value="Norway">Norway</option>
+                      <option value="Oman">Oman</option>
+                      <option value="Pakistan">Pakistan</option>
+                      <option value="Palau">Palau</option>
+                      <option value="Palestinian Territory, Occupied">
+                        Palestinian Territory, Occupied
+                      </option>
+                      <option value="Panama">Panama</option>
+                      <option value="Papua New Guinea">Papua New Guinea</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Peru">Peru</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Pitcairn">Pitcairn</option>
+                      <option value="Poland">Poland</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Puerto Rico">Puerto Rico</option>
+                      <option value="Qatar">Qatar</option>
+                      <option value="Reunion">Reunion</option>
+                      <option value="Romania">Romania</option>
+                      <option value="Russian Federation">
+                        Russian Federation
+                      </option>
+                      <option value="Rwanda">Rwanda</option>
+                      <option value="Saint Helena">Saint Helena</option>
+                      <option value="Saint Kitts and Nevis">
+                        Saint Kitts and Nevis
+                      </option>
+                      <option value="Saint Lucia">Saint Lucia</option>
+                      <option value="Saint Pierre and Miquelon">
+                        Saint Pierre and Miquelon
+                      </option>
+                      <option value="Saint Vincent and The Grenadines">
+                        Saint Vincent and The Grenadines
+                      </option>
+                      <option value="Samoa">Samoa</option>
+                      <option value="San Marino">San Marino</option>
+                      <option value="Sao Tome and Principe">
+                        Sao Tome and Principe
+                      </option>
+                      <option value="Saudi Arabia">Saudi Arabia</option>
+                      <option value="Senegal">Senegal</option>
+                      <option value="Serbia">Serbia</option>
+                      <option value="Seychelles">Seychelles</option>
+                      <option value="Sierra Leone">Sierra Leone</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Slovakia">Slovakia</option>
+                      <option value="Slovenia">Slovenia</option>
+                      <option value="Solomon Islands">Solomon Islands</option>
+                      <option value="Somalia">Somalia</option>
+                      <option value="South Africa">South Africa</option>
+                      <option
+                        value="South Georgia and The South Sandwich Islands"
+                      >
+                        South Georgia and The South Sandwich Islands
+                      </option>
+                      <option value="Spain">Spain</option>
+                      <option value="Sri Lanka">Sri Lanka</option>
+                      <option value="Sudan">Sudan</option>
+                      <option value="Suriname">Suriname</option>
+                      <option value="Svalbard and Jan Mayen">
+                        Svalbard and Jan Mayen
+                      </option>
+                      <option value="Swaziland">Swaziland</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Switzerland">Switzerland</option>
+                      <option value="Syrian Arab Republic">
+                        Syrian Arab Republic
+                      </option>
+                      <option value="Taiwan">Taiwan</option>
+                      <option value="Tajikistan">Tajikistan</option>
+                      <option value="Tanzania, United Republic of">
+                        Tanzania, United Republic of
+                      </option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Timor-leste">Timor-leste</option>
+                      <option value="Togo">Togo</option>
+                      <option value="Tokelau">Tokelau</option>
+                      <option value="Tonga">Tonga</option>
+                      <option value="Trinidad and Tobago">
+                        Trinidad and Tobago
+                      </option>
+                      <option value="Tunisia">Tunisia</option>
+                      <option value="Turkey">Turkey</option>
+                      <option value="Turkmenistan">Turkmenistan</option>
+                      <option value="Turks and Caicos Islands">
+                        Turks and Caicos Islands
+                      </option>
+                      <option value="Tuvalu">Tuvalu</option>
+                      <option value="Uganda">Uganda</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="United Arab Emirates">
+                        United Arab Emirates
+                      </option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="United States">United States</option>
+                      <option value="United States Minor Outlying Islands">
+                        United States Minor Outlying Islands
+                      </option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Uzbekistan">Uzbekistan</option>
+                      <option value="Vanuatu">Vanuatu</option>
+                      <option value="Venezuela">Venezuela</option>
+                      <option value="Viet Nam">Viet Nam</option>
+                      <option value="Virgin Islands, British">
+                        Virgin Islands, British
+                      </option>
+                      <option value="Virgin Islands, U.S.">
+                        Virgin Islands, U.S.
+                      </option>
+                      <option value="Wallis and Futuna">
+                        Wallis and Futuna
+                      </option>
+                      <option value="Western Sahara">Western Sahara</option>
+                      <option value="Yemen">Yemen</option>
+                      <option value="Zambia">Zambia</option>
+                      <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="profile-view__detailitem">
+                  <label for="zcode" class="profile-view__label"
+                    >Zip Code<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="zcode">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <input
+                      type="tel"
+                      pattern="[0-9]{6}"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="gender" class="profile-view__label"
+                    >Gender<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="gender">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.5em"
+                      height="1.8em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 9a5 5 0 1 0 10 0A5 5 0 1 0 7 9m5 5v7m-3-3h6"
+                      />
+                    </svg>
+                    <select
+                      name="gender"
+                      id="gender"
+                      class="form-select"
+                      required
+                    >
+                      <option value="">Please select one…</option>
+                      <option value="female">Female</option>
+                      <option value="male">Male</option>
+                      <option value="non-binary">Non-Binary</option>
+                      <option value="other">Other</option>
+                      <option value="Prefer not to answer">
+                        Perfer not to Answer
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="profile-view__detailitem">
+                  <label for="mobile-number" class="profile-view__label"
+                    >Date of Birth<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="mobile-number">
+                    <i class="fa-regular fa-calendar-days icon"></i>
+                    <input class="input-field" type="date" required />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-view__detailitems">
+                <div class="profile-view__detailitem">
+                  <label for="language" class="profile-view__label"
+                    >Language Known<span class="required">*</span></label
+                  >
+                  <div class="input-field-group" id="language">
+                    <i class="fa-solid fa-language icon"></i>
+                    <select
+                      name="language"
+                      id="language"
+                      class="form-select"
+                      required
+                    >
+                      <option value="">Please select language…</option>
+                      <option value="AF">Afrikaans</option>
+                      <option value="SQ">Albanian</option>
+                      <option value="AR">Arabic</option>
+                      <option value="HY">Armenian</option>
+                      <option value="EU">Basque</option>
+                      <option value="BN">Bengali</option>
+                      <option value="BG">Bulgarian</option>
+                      <option value="CA">Catalan</option>
+                      <option value="KM">Cambodian</option>
+                      <option value="ZH">Chinese (Mandarin)</option>
+                      <option value="HR">Croatian</option>
+                      <option value="CS">Czech</option>
+                      <option value="DA">Danish</option>
+                      <option value="NL">Dutch</option>
+                      <option value="EN">English</option>
+                      <option value="ET">Estonian</option>
+                      <option value="FJ">Fiji</option>
+                      <option value="FI">Finnish</option>
+                      <option value="FR">French</option>
+                      <option value="KA">Georgian</option>
+                      <option value="DE">German</option>
+                      <option value="EL">Greek</option>
+                      <option value="GU">Gujarati</option>
+                      <option value="HE">Hebrew</option>
+                      <option value="HI">Hindi</option>
+                      <option value="HU">Hungarian</option>
+                      <option value="IS">Icelandic</option>
+                      <option value="ID">Indonesian</option>
+                      <option value="GA">Irish</option>
+                      <option value="IT">Italian</option>
+                      <option value="JA">Japanese</option>
+                      <option value="JW">Javanese</option>
+                      <option value="KO">Korean</option>
+                      <option value="LA">Latin</option>
+                      <option value="LV">Latvian</option>
+                      <option value="LT">Lithuanian</option>
+                      <option value="MK">Macedonian</option>
+                      <option value="MS">Malay</option>
+                      <option value="ML">Malayalam</option>
+                      <option value="MT">Maltese</option>
+                      <option value="MI">Maori</option>
+                      <option value="MR">Marathi</option>
+                      <option value="MN">Mongolian</option>
+                      <option value="NE">Nepali</option>
+                      <option value="NO">Norwegian</option>
+                      <option value="FA">Persian</option>
+                      <option value="PL">Polish</option>
+                      <option value="PT">Portuguese</option>
+                      <option value="PA">Punjabi</option>
+                      <option value="QU">Quechua</option>
+                      <option value="RO">Romanian</option>
+                      <option value="RU">Russian</option>
+                      <option value="SM">Samoan</option>
+                      <option value="SR">Serbian</option>
+                      <option value="SK">Slovak</option>
+                      <option value="SL">Slovenian</option>
+                      <option value="ES">Spanish</option>
+                      <option value="SW">Swahili</option>
+                      <option value="SV">Swedish</option>
+                      <option value="TA">Tamil</option>
+                      <option value="TT">Tatar</option>
+                      <option value="TE">Telugu</option>
+                      <option value="TH">Thai</option>
+                      <option value="BO">Tibetan</option>
+                      <option value="TO">Tonga</option>
+                      <option value="TR">Turkish</option>
+                      <option value="UK">Ukrainian</option>
+                      <option value="UR">Urdu</option>
+                      <option value="UZ">Uzbek</option>
+                      <option value="VI">Vietnamese</option>
+                      <option value="CY">Welsh</option>
+                      <option value="XH">Xhosa</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-group">
+                <input type="reset" value="Discard" class="btn-reset" />
+                <input type="submit" value="Save Changes" class="btn-submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="#">Support</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
